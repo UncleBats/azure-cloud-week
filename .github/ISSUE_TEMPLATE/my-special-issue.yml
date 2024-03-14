@@ -1,0 +1,21 @@
+name: My Special Issue
+description: This issue is here to demonstrate templating
+labels: ['Bug', '🐛' ]
+body:
+  - type: markdown
+    attributes:
+      value: "## Welcome!"
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug! If you need real-time help, join us on Discord.
+
+  - type: checkboxes
+    id: cat-encounter
+    attributes:
+      label: What color cat did you encounter during this bug?
+      description: You may select more than one.
+      options:
+        - label: Orange cat (required. Everyone likes orange cats.)
+          required: true
+        - label: Black cat
